@@ -79,18 +79,44 @@
 }
 
 .header-logo {
-    /* border: 5px solid salmon; */
-    /* display: inline-block; */
-    /* align-content: center; */
-    /* padding: 0 auto; */
-    margin: 3% 10%;
+    margin: 5% 10%;
 }
 
 .header-logo img {
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
+.img-collection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: space-around;
+}
 
+.img-collection,
+.collection-card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    text-align: left;
+    padding: 5%;
+}
+
+.img-collection div img {
+    width: 300px;
+    height: 256px;
+}
+
+.col-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.772);
+}
 
 
 
@@ -162,6 +188,16 @@
 
     .header-logo {
         margin: 3%;
+    }
+
+    .img-collection {
+        grid-template-columns: auto;
+    }
+
+    .ollection-card {
+        width: 100%;
+        margin: 0;
+        padding: ;
     }
 
 
