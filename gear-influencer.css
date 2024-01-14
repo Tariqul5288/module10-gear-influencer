@@ -50,16 +50,17 @@
     font-weight: 600;
 }
 
-.main {
+.header-main {
     margin-top: 80px;
     display: flex;
     gap: 20px;
-    padding: 0 100px;
+    padding: 0 120px;
     justify-content: space-between;
     align-items: center;
 }
 
-.text-main {
+.text-main,
+.img-main {
     width: 48%;
 }
 
@@ -71,11 +72,6 @@
 .btn-main {
     padding: 10px 24px;
     margin-top: 20px;
-}
-
-.img-main {
-    width: 48%;
-
 }
 
 .img-main img {
@@ -141,6 +137,17 @@
         flex-direction: row;
         gap: 4px;
     }
+
+    .header-main {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .text-main,
+    .img-main {
+        width: 98%;
+    }
+
 
     /* .nav-bar h3 {
         width: 100%;
