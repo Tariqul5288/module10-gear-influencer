@@ -87,25 +87,26 @@
 }
 
 .img-collection {
+    margin: 2% 12%;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+    text-align: start
+        /* object-fit: cover; */
 }
 
-.img-collection,
+
 .collection-card {
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    text-align: left;
-    padding: 5%;
+    padding: 40px 60px;
 }
 
-.img-collection div img {
-    width: 300px;
-    height: 256px;
+.collection-card img {
+    width: 100%;
+    height: auto;
 }
 
 .col-heading {
@@ -191,17 +192,13 @@
     }
 
     .img-collection {
+        margin: 0 2%;
         grid-template-columns: auto;
+
     }
 
-    .ollection-card {
+    .collection-card {
         width: 100%;
-        margin: 0;
-        padding: ;
+        padding: 10px;
     }
-
-
-    /* .nav-bar h3 {
-        width: 100%;
-    } */
 }
